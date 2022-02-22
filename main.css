@@ -1,0 +1,165 @@
+@media (max-width: 576px) { 
+    .row{
+        align-items: flex-start;
+               
+    }
+    .p-2{
+        border-style: solid;
+    }
+    .boitemail{
+        width: 100%;
+    }
+ }
+
+
+body{
+   text-align: center;
+   
+   margin: 10%;
+   font-size: 1vw;
+   
+   
+}
+
+h3, h4{
+    font-size: 2vw;
+}
+
+.background{
+    background-image: url(Image-a.png);
+    background-size: cover;
+    height: 50vw;
+    background-position: center;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+
+ul li{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.arrow-down {
+    position: absolute;
+    width: 0;
+    height: 0;
+    
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-top: 14px solid white;
+}
+.p-2{
+    height: 66.66%;
+}
+
+.p-3{
+    height: 33.33%;
+    
+}
+div, .row{
+    --bs-gutter-x: 0rem;
+    size: 25;
+}
+
+
+img {
+    max-width: 100%;
+  }
+
+  .text{
+      color: gray;
+      
+      background-color: #f7f7f7;
+      
+      height: 50vw; 
+           
+    }
+
+  .imagesd{
+
+      background-image: url(Image-D.png);
+      background-size: cover;
+  }
+
+  .facebook{
+    color: blue;
+}
+.pinterest{
+    color: red;
+}
+.twitter{
+    color: aqua;
+}
+footer{
+    background-color: #f7f7f7;
+    height:30vh;
+    max-width: 100%;
+}
+.facebook,.pinterest,.twitter
+{
+    font-size: xx-large;
+    text-align: center;
+}
+#signature
+{
+    text-align: center;
+    margin: auto;
+    margin-top: 7%;
+}
+#logo{
+    text-align: center;
+    margin: auto;
+    margin-top: 6%;
+
+    }
+
+    .card{
+        display: flex;
+        height: 50vh;
+        border: none !important;
+    }
+    
+    .card-body{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .card-img-top{
+        width: 5%;
+    }
+
+    .d-flex{
+        align-content: center;
+        margin-top: 2rem;
+    }
+    .text-center{
+        margin-bottom: 6%;
+        height: 20vh;
+        display:block;
+        line-height: 19vh;
+    }
+   .newyork{
+       margin-top: 10%;
+       margin-bottom: -6vh;
+   }
+   .avenue{
+       margin-bottom: -6vh;
+   }
+
+   .imagesx {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .imagalign {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+  }
+
