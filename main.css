@@ -1,81 +1,118 @@
-@media (max-width: 576px) { 
-    .row{
-        align-items: flex-start;
-               
-    }
+@media only screen and (max-width:767px) { 
+    
     .p-2{
         border-style: solid;
     }
     .boitemail{
-        width: 100%;
+        width: 100vh;
+    }
+
+    .entete,.p-2{
+        font-size: 2vw;
+        
+    }
+
+    .logo-i{
+        top: 27vw;
     }
  }
 
+#logo2{
+    background-image: url(./images/Image-D.png);
+    background-size: cover;
+    height: 29vw;
+}
+#logo-3{
+    background-image: url(./images/Image-B.png);
+    background-size: cover;
+    height: 29vw;
+}
+
+#logo-4{
+    background-image: url(./images/Image-F.png);
+    background-size: cover;
+    height: auto;
+    height: 29vw;
+}
+
+#logoi{
+    background-image: url(./images/Image-F.png);
+    background-size: cover; 
+    
+}
+
+.logo-i{
+    height: 5vw; 
+    position: relative; 
+    top: 12vw;
+}
+
+#image-g{
+    background-image: url(./images/Image.G.png); 
+    background-size: cover; 
+    
+}
 
 body{
    text-align: center;
-   
+    font-family: 'lato', sans-serif;
    margin: 10%;
    font-size: 1vw;
-   
-   
+
+
 }
 
 h3, h4{
     font-size: 2vw;
 }
 
+.entete{
+    position: relative; 
+    padding-top: 10%; 
+    margin-left: 10vw; 
+    margin-right: 10vw; 
+    line-height: 2.5vw;
+}
+
 .background{
-    background-image: url(Image-a.png);
+    background-image: url(./images/Image-a.png);
     background-size: cover;
     height: 50vw;
     background-position: center;
 }
 
-table{
-    border-collapse: collapse;
-}
-
-
 ul li{
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 1.563rem;
+    margin-right: 1.563rem;
 }
 
-.arrow-down {
-    position: absolute;
-    width: 0;
-    height: 0;
-    
-    border-right: 16px solid transparent;
-    border-left: 16px solid transparent;
-    border-top: 14px solid white;
-}
+
 .p-2{
     height: 66.66%;
 }
 
 .p-3{
     height: 33.33%;
-    
+
 }
 div, .row{
     --bs-gutter-x: 0rem;
-    size: 25;
+    
 }
 
 
 img {
     max-width: 100%;
+    height: auto;
   }
 
   .text{
       color: gray;
-      
+
       background-color: #f7f7f7;
-      
-      height: 50vw; 
-           
+
+      height: 30vw; 
+
     }
 
   .imagesd{
@@ -121,13 +158,13 @@ footer{
         height: 50vh;
         border: none !important;
     }
-    
+
     .card-body{
         align-items: center;
         justify-content: center;
     }
-    
-    
+
+
     .card-img-top{
         width: 5%;
     }
@@ -162,4 +199,3 @@ footer{
     flex-direction: row;
     max-width: 50%;
   }
-
