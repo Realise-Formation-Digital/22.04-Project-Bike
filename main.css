@@ -18,25 +18,25 @@
  }
 
 #logo2{
-    background-image: url(./images/Image-D.png);
+    background-image: url(./Images/Image-D.png);
     background-size: cover;
     height: 29vw;
 }
 #logo-3{
-    background-image: url(./images/Image-B.png);
+    background-image: url(./Images/Image-B.png);
     background-size: cover;
     height: 29vw;
 }
 
 #logo-4{
-    background-image: url(./images/Image-F.png);
+    background-image: url(./Images/Image-F.png);
     background-size: cover;
     height: auto;
     height: 29vw;
 }
 
 #logoi{
-    background-image: url(./images/Image-F.png);
+    background-image: url(./Images/Image-F.png);
     background-size: cover; 
     
 }
@@ -48,9 +48,21 @@
 }
 
 #image-g{
-    background-image: url(./images/Image.G.png); 
+    background-image: url(./Images/Image.G.png); 
     background-size: cover; 
     
+}
+
+#navibar{
+    background-color: transparent
+}
+
+.logob{
+    height: 3vw;
+}
+
+.logoc{
+    height: 6vw; top: 10vw; position: relative;
 }
 
 body{
@@ -75,7 +87,7 @@ h3, h4{
 }
 
 .background{
-    background-image: url(./images/Image-a.png);
+    background-image: url(./Images/Image-a.png);
     background-size: cover;
     height: 50vw;
     background-position: center;
@@ -90,6 +102,21 @@ ul li{
 .p-2{
     height: 66.66%;
 }
+
+#p2{
+    line-height: 1.5em;
+}
+
+.oilvia{
+    position: relative;
+    top: 1.563rem;
+}
+
+.img-d{
+    height: 3vw;
+}
+
+.olivia
 
 .p-3{
     height: 33.33%;
@@ -117,7 +144,7 @@ img {
 
   .imagesd{
 
-      background-image: url(Image-D.png);
+      background-image: url(./Images/Image-D.png);
       background-size: cover;
   }
 
