@@ -13,7 +13,7 @@
    </head>
    <body>
       <header>
-         <section class="background">
+         <section class="background pt-5">
             <nav class="navbar navbar-expand-lg navbar-light" id="navibar">
                <div class="container-fluid">
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -22,27 +22,39 @@
                   </button>
                   <div class="collapse navbar-collapse" id="collapsibleNavbar">
                      <ul class="navbar-nav justify-content-center w-100">
-                        <li class="nav-item">
+                        <li class="nav-item col-2">
                            <a class="nav-link" href="#about" onclick="scrollWin(0, 50)">ABOUT US</a>
                         </li>
                         <li> . </li>
-                        <li class="nav-item">
+                        <li class="nav-item col-2">
                            <a class="nav-link" href="#work">WORK</a>
                         </li>
                         <img src="./Images/logo-a.png" width="80" height="80" alt="Logo">
-                        <li class="nav-item">
-                           <a class="nav-link" href="#shop">SHOP</a>
+                        <li class="nav-item col-2">
+                           <a class="nav-link col-2" href="#shop">SHOP</a>
                         </li>
                         <li> . </li>
-                        <li class="nav-item">
+                        <li class="nav-item col-2">
                            <a class="nav-link" href="#contact">CONTACT</a>
                         </li>
+                        <li><button class="col-2 navbar-text btn bg-transparent navbar-text lgo2 col-2 rounded-pill  p-2 border border-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img src="./Images/achats.png" alt=""></img><span id="badge" class="badge rounded-pill bg-dark">1</span></button></li>
                      </ul>
                      <!--J'ai rajouté les liens en id pour naviguer vers les  différentes parties de la page.-->
                   </div>
                </div>
             </nav>
          </section>
+         <section id="pancav">      
+            <div class="offcanvas offcanvas-end bg-light" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">          
+                <div class="offcanvas-header hderbg">
+                  <img class="lgo2" src="./Images/panier (1).png" alt="panier"><h5 class="offcanvas-title polce" id="offcanvasWithBothOptionsLabel">Panier</h5></img>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <p>Try scrolling the rest of the page to see this option in action.</p>
+                </div>
+            </div>
+    </section>
       </header>
       <section id="about" class="text">
       </section>
