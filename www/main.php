@@ -1,4 +1,4 @@
-<?php
+ <!-- <php
     if ( isset( $_GET['submit'] ) ) {
         /* récupérer les données du formulaire en utilisant 
            la valeur des attributs name comme clé 
@@ -16,4 +16,15 @@
     foreach ($csvFile as $line) {
         $data[] = str_getcsv($line);
         }
-        ?>
+        ?>  -->
+
+<?php
+
+$row =1;
+    if (($handle = fopen("users.csv", "r")) !== FALSE) {
+        while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+    
+
+        }
+    }
+?>

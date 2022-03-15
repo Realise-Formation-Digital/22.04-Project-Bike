@@ -60,7 +60,7 @@
                                  </div>
                                  <div class="modal-body">
                                     <!-- form -->
-                                    <form action="main.php" method="get">
+                                    <form action="main.php" method="POST">
                                        <div class="mb-3">
                                        <label for="exampleInputEmail1" class="form-label">Login</label>
                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Login" placeholder="enter your email">
