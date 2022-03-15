@@ -1,3 +1,7 @@
+<?php
+include ("index2.php");
+pre_r($_POST);
+?>
 <!DOCTYPE html>
 <html lang="fr">
   
@@ -57,15 +61,17 @@
        </div>
        <div class="modal-body">
           <!-- form -->
-         <form>
+
+          <!-- action et methode ajoutée -->
+         <form action="index.php" method="post">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" aria-describedby="emailHelp">
              
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <input type="password" class="form-control" id="exampleInputPassword1" name="exampleInputPassword1">
             </div>
            
             <button type="submit" class="btn btn-primary">Enregistrer</button>
@@ -294,19 +300,20 @@
        </div>
        <div class="modal-body">
           <!-- form -->
-         <form>
+          <form action="index.php" method="post">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" aria-describedby="emailHelp">
              
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <input type="password" class="form-control" id="exampleInputPassword1" name="exampleInputPassword1">
             </div>
            
             <button type="submit" class="btn btn-primary">Enregistrer</button>
           </form>
+        
        </div>
        <div class="modal-footer">
          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
