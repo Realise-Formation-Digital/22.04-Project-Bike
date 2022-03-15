@@ -74,7 +74,7 @@ pre_r($_POST);
               <input type="password" class="form-control" id="exampleInputPassword1" name="exampleInputPassword1">
             </div>
            
-            <button type="submit" class="btn btn-primary">Enregistrer</button>
+            <button type="submit" method="post" name="enregistrer" class="btn btn-primary">Enregistrer</button>
           </form>
        </div>
        <div class="modal-footer">
@@ -278,13 +278,41 @@ pre_r($_POST);
                style="background-image: url(./Images/logo-a.png); background-repeat: no-repeat;text-align: center; color: #848789; letter-spacing: 1px; font-size: 24px; font-weight: 300; padding-top: 120px; margin: 70px 0 40px 0; font-style: italic;">
                Stay on the saddle!
             </h2>
-            <p style="text-align: center; color:gray;"></p>
-            <form action="/action_page.php" style="text-align: center;">
-            <input type="email" id="email" name="email" placeholder="Enter your email..."
-               style="height:8vh; width:47vh;">
-            <input type="submit" value="GO"
-               style="margin-top:10px;height:4.688rem; width:7.813rem; color:white; background-color:#64c29e;border-color: #64c29e; margin-bottom: 6%;">
-         </div>
+                              <!-- formulaire de contact -->
+                                 <!-- Wrapper container -->
+                                 <div class="container py-4">
+
+                  <!-- Bootstrap 5 starter form -->
+                  <form id="contactForm" method="post" action="index.php">
+
+                  <!-- Name input -->
+                  <div class="mb-3">
+                     <label class="form-label" for="name">Name</label>
+                     <input class="form-control" id="name" name="name" type="text" placeholder="Name" />
+                  </div>
+
+                  <!-- Email address input -->
+                  <div class="mb-3">
+                     <label class="form-label" for="emailAddress">Email Address</label>
+                     <input class="form-control" id="emailAddress" name="emailAddress" type="email" placeholder="Email Address" />
+                  </div>
+
+                  <!-- Message input -->
+                  <div class="mb-3">
+                     <label class="form-label" for="message">Message</label>
+                     <textarea class="form-control" id="message" name="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
+                  </div>
+
+                  <!-- Form submit button -->
+                  <div class="d-grid">
+                     <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                  </div>
+
+                  </form>
+
+                  </div> 
+                  <!-- fin du formulaire de contact -->
+            </div>
          <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
    Register
