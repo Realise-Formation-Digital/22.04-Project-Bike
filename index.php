@@ -38,7 +38,7 @@ $regex_head = '/[nr]/';
 /*Vérifie qu il n y est pas d erreur dans adresse mail*/
  if (!preg_match($regex_mail, $mail))
  {
- $alert = "L'adresse ".$mail." n'est pas valide';      
+ $alert = "L'adresse ".$mail." n'est pas valide";      
  }
  else
 { 
@@ -96,7 +96,7 @@ if ($renseigne == 1 AND $header == 1 AND $courriel == 1)
 /*Envoi du mail*/
 
 /*Le destinataire*/
-$to="demo@fafa-informatique.com";
+$to="###@###.com";
 
 /*Le sujet du message qui apparaitra*/
 $sujet="Message depuis le site";
@@ -117,14 +117,14 @@ $msg .= 'Mail : '.$mail."rnrn";
 $msg .= 'Motif : '.$motif."rnrn";
 $msg .= 'Message : '.$message."rnrn";
 /*Les en-têtes du mail*/
-$headers = 'From: MESSAGE DU SITE FAFA<demo@fafa-informatique>'."rn";
+$headers = 'From: MESSAGE DU SITE BIKE<###@###.com>'."rn";
 $headers .= "rn";
 /*L'envoi du mail - Et page de redirection*/
 mail($to, $sujet, $msg, $headers);
-header('Location:http://www.fafa-informatique.com');
+header('Location:###.com');
 }
 else
 {
-header('Location:http://www.fafa-informatique.com');
+header('Location:###.com');
 }
 ?>
