@@ -244,24 +244,24 @@
                   <div class="container py-4">
 
                      <!-- Bootstrap 5 starter form -->
-                     <form id="contactForm">
+                     <form id="contactForm" method="post" action="index.php">
                      
                      <!-- Name input -->
                      <div class="mb-3">
                         <label class="form-label" for="name">Name</label>
-                        <input class="form-control" id="name" type="text" placeholder="Name" />
+                        <input class="form-control" id="name" name="name" type="text" placeholder="Name" />
                      </div>
                      
                      <!-- Email address input -->
                      <div class="mb-3">
                         <label class="form-label" for="emailAddress">Email Address</label>
-                        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+                        <input class="form-control" id="emailAddress" name="emailAddress" type="email" placeholder="Email Address" />
                      </div>
                      
                      <!-- Message input -->
                      <div class="mb-3">
                         <label class="form-label" for="message">Message</label>
-                        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
+                        <textarea class="form-control" id="message" name="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
                      </div>
                      
                      <!-- Form submit button -->
