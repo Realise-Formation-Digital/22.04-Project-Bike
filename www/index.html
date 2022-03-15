@@ -43,6 +43,45 @@
                         <li class="nav-item">
                            <button id="click3">CONTACT</button>
                         </li>
+                        <li> . </li>
+                        <li class="nav-item">
+                                   <!-- Button trigger modal -->
+                           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                              SIGN-IN
+                           </button>
+                           
+                           <!-- Modal -->
+                           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Formulaire d'enregistrement</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body">
+                                    <!-- form -->
+                                    <form action="main.php" method="get">
+                                       <div class="mb-3">
+                                       <label for="exampleInputEmail1" class="form-label">Login</label>
+                                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Login" placeholder="enter your email">
+                                       
+                                       </div>
+                                       <div class="mb-3">
+                                       <label for="exampleInputPassword1" class="form-label">Password</label>
+                                       <input type="password" class="form-control" id="exampleInputPassword1" name="Password" placeholder="enter your password">
+                                       </div>
+                                    
+                                       <button type="submit" class="btn btn-primary">Se connecter</button>
+                                    </form>
+                                 </div>
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                    
+                                 </div>
+                              </div>
+                              </div>
+                           </div>
+                        </li>
                      </ul>
                      <!--J'ai rajouté les liens en id pour naviguer vers les  différentes parties de la page.-->
                   </div>
@@ -243,6 +282,42 @@
             <input type="submit" value="GO"
                style="margin-top:10px;height:4.688rem; width:7.813rem; color:white; background-color:#64c29e;border-color: #64c29e; margin-bottom: 6%;">
          </div>
+         <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+   Register
+ </button>
+ 
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">Formulaire d'enregistrement</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+          <!-- form -->
+         <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+             
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+           
+            <button type="submit" class="btn btn-primary">Enregistrer</button>
+          </form>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         
+       </div>
+     </div>
+   </div>
+ </div>
       </section>
       <footer>
          <div class="container">
@@ -271,4 +346,3 @@
          crossorigin="anonymous"></script>
    </body>
 </html>
-
