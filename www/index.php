@@ -64,13 +64,13 @@
           <!-- action et methode ajoutée -->
          <form action="index.php" method="post">
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" name="Login" aria-describedby="emailHelp">
+              <label for="Login" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="Login" name="Login" aria-describedby="emailHelp">
              
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" name="Password">
+              <label for="Password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="Password" name="Password">
             </div>
            
             <button type="submit" method="post" name="enregistrer" class="btn btn-primary">Enregistrer</button>
@@ -353,16 +353,16 @@
                   <!-- fin du formulaire de contact -->
             </div>
          <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
    Register
  </button>
  
  <!-- Modal -->
- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
    <div class="modal-dialog">
      <div class="modal-content">
        <div class="modal-header">
-         <h5 class="modal-title" id="exampleModalLabel">Formulaire d'enregistrement</h5>
+         <h5 class="modal-title" id="exampleModalLabel2">Formulaire d'enregistrement</h5>
          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
        </div>
        <div class="modal-body">
@@ -370,7 +370,7 @@
 
           <form action="index.php" method="post">
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <label for="exampleInputEmail1" class="form-label">Email addressXXX</label>
               <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" aria-describedby="emailHelp">
              
             </div>
