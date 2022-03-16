@@ -1,14 +1,19 @@
 <?php
-
-$array=[];
 $inscriptionFullFilled = false;
-function pre_r($array){
-    //  if($inscriptionFullFilled == true){
-        // echo'<pre>';
+$array=[];
+
+function pre_r($array, $inscriptionOK){
+    if($inscriptionOK == true){
+         echo'<pre>';
         print_r("Votre inscription a été confirmée");
         
-        // echo'</pre>';
-    // }
+         echo'</pre>';
+     }else{
+        echo'<pre>';
+        print_r("Veuillez vous inscrire je vous prie");
+        
+         echo'</pre>';
+     }
     return $array;
 }
 
@@ -20,6 +25,9 @@ function pre_r($array){
 if (isset($_POST["exampleInputEmail1"])) {
     $tableau = [$_POST["exampleInputEmail1"],$_POST["exampleInputPassword1"] ];
     
+    
+        
+    
     //prendre le fichier csv
     $filename = "./user.csv";
     //écrire dans le fichier csv
@@ -27,11 +35,17 @@ if (isset($_POST["exampleInputEmail1"])) {
     if ($f === false) {
         die('Error opening the file ' . $filename);
     }
-    $inscriptionFullFilled = true;
+    
+    // echo("inscription en cours");
     fputcsv($f, $tableau);
     fclose($f);
+    if (isset($_POST["exampleInputEmail1"]) &&
+        isset($_POST["exampleInputPassword1"])) {
+        $inscriptionFullFilled = true;
+    }
 
 }
+
 $name = $_POST['name'];
 $emailAddress = $_POST['emailAddress'];
 $message = $_POST['message'];
