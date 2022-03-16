@@ -47,7 +47,7 @@
                            
                                    <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-   Contact
+   Sign in
  </button>
  
  <!-- Modal -->
@@ -55,7 +55,7 @@
    <div class="modal-dialog">
      <div class="modal-content">
        <div class="modal-header">
-         <h5 class="modal-title" id="exampleModalLabel">Formulaire d'enregistrement</h5>
+         <h5 class="modal-title" id="exampleModalLabel">Formulaire d'authentification</h5>
          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
        </div>
        <div class="modal-body">
@@ -64,12 +64,12 @@
           <!-- action et methode ajoutée -->
          <form action="index.php" method="post">
             <div class="mb-3">
-              <label for="Login" class="form-label">Email address</label>
+              <label for="Login" class="form-label">Login:</label>
               <input type="email" class="form-control" id="Login" name="Login" aria-describedby="emailHelp">
              
             </div>
             <div class="mb-3">
-              <label for="Password" class="form-label">Password</label>
+              <label for="Password" class="form-label">Password:</label>
               <input type="password" class="form-control" id="Password" name="Password">
             </div>
            
