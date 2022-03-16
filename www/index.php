@@ -1,5 +1,6 @@
 <?php include ("main.php") ?>
 
+
 <!DOCTYPE html>
 <html lang="fr">
   
@@ -43,7 +44,45 @@
                         </li>
                         <li> . </li>
                         <li class="nav-item">
-                           <button id="click3">CONTACT</button>
+                           
+                                   <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+   Contact
+ </button>
+ 
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">Formulaire d'enregistrement</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+          <!-- form -->
+
+          <!-- action et methode ajoutée -->
+         <form action="index.php" method="post">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" name="Login" aria-describedby="emailHelp">
+             
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" name="Password">
+            </div>
+           
+            <button type="submit" method="post" name="enregistrer" class="btn btn-primary">Enregistrer</button>
+          </form>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         
+       </div>
+     </div>
+   </div>
+ </div>
                         </li>
                         <li> . </li>
                         <li class="nav-item">
@@ -278,48 +317,41 @@
                Stay on the saddle!
             </h2>
 
-            <!-- formulaire de contact -->
-               <!-- Wrapper container -->
-                  <div class="container py-4">
+                              <!-- formulaire de contact -->
+                                 <!-- Wrapper container -->
+                                 <div class="container py-4">
 
-                     <!-- Bootstrap 5 starter form -->
-                     <form id="contactForm" method="post" action="index.php">
-                     
-                     <!-- Name input -->
-                     <div class="mb-3">
-                        <label class="form-label" for="name">Name</label>
-                        <input class="form-control" id="name" name="name" type="text" placeholder="Name" />
-                     </div>
-                     
-                     <!-- Email address input -->
-                     <div class="mb-3">
-                        <label class="form-label" for="emailAddress">Email Address</label>
-                        <input class="form-control" id="emailAddress" name="emailAddress" type="email" placeholder="Email Address" />
-                     </div>
-                     
-                     <!-- Message input -->
-                     <div class="mb-3">
-                        <label class="form-label" for="message">Message</label>
-                        <textarea class="form-control" id="message" name="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
-                     </div>
-                     
-                     <!-- Form submit button -->
-                     <div class="d-grid">
-                        <button class="btn btn-primary btn-lg" type="submit">Submit</button>
-                     </div>
-                     
-                     </form>
-                     
-                     </div> 
-            <!-- fin du formulaire de contact -->
+                  <!-- Bootstrap 5 starter form -->
+                  <form id="contactForm" method="post" action="index.php">
 
-            <p style="text-align: center; color:gray;"></p>
-            <form action="/action_page.php" style="text-align: center;">
-            <input type="email" id="email" name="email" placeholder="Enter your email..."
-               style="height:8vh; width:47vh;">
-            <input type="submit" value="GO"
-               style="margin-top:10px;height:4.688rem; width:7.813rem; color:white; background-color:#64c29e;border-color: #64c29e; margin-bottom: 6%;">
-         </div>
+                  <!-- Name input -->
+                  <div class="mb-3">
+                     <label class="form-label" for="name">Name</label>
+                     <input class="form-control" id="name" name="name" type="text" placeholder="Name" />
+                  </div>
+
+                  <!-- Email address input -->
+                  <div class="mb-3">
+                     <label class="form-label" for="emailAddress">Email Address</label>
+                     <input class="form-control" id="emailAddress" name="emailAddress" type="email" placeholder="Email Address" />
+                  </div>
+
+                  <!-- Message input -->
+                  <div class="mb-3">
+                     <label class="form-label" for="message">Message</label>
+                     <textarea class="form-control" id="message" name="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
+                  </div>
+
+                  <!-- Form submit button -->
+                  <div class="d-grid">
+                     <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                  </div>
+
+                  </form>
+
+                  </div> 
+                  <!-- fin du formulaire de contact -->
+            </div>
          <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
    Register
@@ -335,19 +367,22 @@
        </div>
        <div class="modal-body">
           <!-- form -->
-         <form>
+
+          <form action="index.php" method="post">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" aria-describedby="emailHelp">
              
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+
+              <input type="password" class="form-control" id="exampleInputPassword1" name="exampleInputPassword1">
             </div>
            
             <button type="submit" class="btn btn-primary">Enregistrer</button>
           </form>
+        
        </div>
        <div class="modal-footer">
          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

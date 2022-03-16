@@ -7,6 +7,7 @@ services:
     image: php:7.4-apache
 
     container_name: php_web-bike
+
     # Run the services as the same user as the host's one, or as user with uid 1000
     user: "${UID:-1001}:${UID:-1001}"
     # Expose HTTP/S ports
@@ -21,3 +22,4 @@ services:
     sysctls:
       # Allow OS to bind 80 port to unprivileged (eg. non-root) users
       - net.ipv4.ip_unprivileged_port_start=0 
+
