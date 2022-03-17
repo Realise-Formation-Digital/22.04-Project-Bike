@@ -69,6 +69,12 @@ if($f){
 
         if ($line[0] == $_POST["Login"] && $line[1] == $_POST["Password"]) {
             $trouve = true;
+            
+            echo'<pre>';
+         print_r("Vous êtes connécté");
+        
+         echo'</pre>';
+         break;
         }
         
        //erreur ne rentre jamais dans le if suivant
