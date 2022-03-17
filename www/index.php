@@ -1,6 +1,7 @@
-<?php include ("main.php") ?>
-
-
+<?php
+include ("index2.php");
+pre_r($_POST, $inscriptionFullFilled);
+?>
 <!DOCTYPE html>
 <html lang="fr">
   
@@ -83,45 +84,6 @@
      </div>
    </div>
  </div>
-                        </li>
-                        <li> . </li>
-                        <li class="nav-item">
-                                   <!-- Button trigger modal -->
-                           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                              SIGN-IN
-                           </button>
-                           
-                           <!-- Modal -->
-                           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                              <div class="modal-content">
-                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Formulaire d'enregistrement</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                 </div>
-                                 <div class="modal-body">
-                                    <!-- form -->
-                                    <form action="main.php" method="POST">
-                                       <div class="mb-3">
-                                       <label for="exampleInputEmail1" class="form-label">Login</label>
-                                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Login" placeholder="enter your email">
-                                       
-                                       </div>
-                                       <div class="mb-3">
-                                       <label for="exampleInputPassword1" class="form-label">Password</label>
-                                       <input type="password" class="form-control" id="exampleInputPassword1" name="Password" placeholder="enter your password">
-                                       </div>
-                                    
-                                       <button type="submit" class="btn btn-primary">Se connecter</button>
-                                    </form>
-                                 </div>
-                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                                    
-                                 </div>
-                              </div>
-                              </div>
-                           </div>
                         </li>
                      </ul>
                      <!--J'ai rajouté les liens en id pour naviguer vers les  différentes parties de la page.-->
@@ -316,7 +278,6 @@
                style="background-image: url(./Images/logo-a.png); background-repeat: no-repeat;text-align: center; color: #848789; letter-spacing: 1px; font-size: 24px; font-weight: 300; padding-top: 120px; margin: 70px 0 40px 0; font-style: italic;">
                Stay on the saddle!
             </h2>
-
                               <!-- formulaire de contact -->
                                  <!-- Wrapper container -->
                                  <div class="container py-4">
@@ -367,7 +328,6 @@
        </div>
        <div class="modal-body">
           <!-- form -->
-
           <form action="index.php" method="post">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email addressXXX</label>
@@ -376,7 +336,6 @@
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Password</label>
-
               <input type="password" class="form-control" id="exampleInputPassword1" name="exampleInputPassword1">
             </div>
            
@@ -419,3 +378,4 @@
          crossorigin="anonymous"></script>
    </body>
 </html>
+
