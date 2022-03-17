@@ -61,15 +61,16 @@ if($f){
         if ($line[0] == $_POST["Login"] && $line[1] == $_POST["Password"]) {
             $trouve = true;
             
-            echo'<pre>';
-         print_r("Vous êtes connécté");
-        
-         echo'</pre>';
-         break;
         }
         
     }
 
+    if ($trouve) {
+        session_start();
+        $_SESSION['Login'] = $_POST["Login"];
+        header ('location: espace-membre.php');
+        exit();
+    }
     
 }
 

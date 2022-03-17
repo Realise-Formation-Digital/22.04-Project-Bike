@@ -1,13 +1,11 @@
-
-
-
-  <?php
+<?php
   session_start();
-  session_unset();
-  session_destroy();
-  if (!isset($_session['login'])) {header ('location: index.php'); 
-  exit();}
-include ("index2.php");
+
+  if (!isset($_SESSION['Login'])) {
+    header ('location: index.php'); 
+    exit();
+  }
+// include ("index2.php");
 //pre_r($_POST);
 ?>
 
@@ -25,7 +23,7 @@ include ("index2.php");
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <h1>Bienvenue dans l'espace privÃ© !</h1>
+                <h1>Bienvenue <?php echo $_SESSION["Login"]; ?> dans votre espace privé !</h1>
                 
             
                                                                 <!-- Button trigger modal -->
