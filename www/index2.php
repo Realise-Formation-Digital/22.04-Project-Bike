@@ -116,7 +116,7 @@ $message = $_POST['message'];
 
 $tableau = [$_POST['name'], $_POST['emailAddress'], $_POST['message']];
 
- $fp = fopen('file.csv', 'w');
+ $fp = fopen('file.csv', 'a');
  
  fputcsv($fp, $tableau);
 
