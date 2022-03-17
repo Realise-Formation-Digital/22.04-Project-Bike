@@ -20,9 +20,6 @@ function pre_r($array, $inscriptionOK){
 
 
 
-var_dump($_POST["Login"]);
-
-
 
 if (isset($_POST["exampleInputEmail1"])) {
     $tableau = [$_POST["exampleInputEmail1"],$_POST["exampleInputPassword1"] ];
@@ -65,19 +62,43 @@ $f = fopen($filename, 'r');
 
 
 if($f){
+
+    $trouve = false;
     
-    while($line = fgetcsv($f, 1000, ",")){
-       
-        if($line == $_POST["Login"].",".$_POST["Password"]){
-            die ("test2");
-            $loggedIn = true;
-            print_r("tu es connecté");
-        }else{
-            
-            return print_r("tu n'es pas connecté");
-            
+    while($line = fgetcsv($f, 1000, ",")) {
+
+        if ($line[0] == $_POST["Login"] && $line[1] == $_POST["Password"]) {
+            $trouve = true;
         }
+        
+       //erreur ne rentre jamais dans le if suivant
+       // for($i = 0; $i<count($line); $i++){
+           // var_dump($_POST["Login"].",".$_POST["Password"]);
+           
+           /*
+           var_dump("line i =".$line[0]);
+           var_dump("line i+1 =".$line[0+1]);
+           if($line[$i] == $_POST["Login"] &&
+              $line[$i+1] == $_POST["Password"]){
+          // if($line[$i] == $_POST["Login"].",".$_POST["Password"]){
+        //   if($line == $_POST["Login"].",".$_POST["Password"]){
+            // if(strcmp($_POST["exampleInputEmail1"],$_POST["Login"]) &&
+            // strcmp($_POST["exampleInputPassword1"],$_POST["Password"])== 0){
+              
+            die("test1");
+               
+               $loggedIn = true;
+               return print_r("tu es connecté");
+           }else{
+               
+               return print_r("tu n'es pas connecté");
+               
+           }
+           */
+       //}
     }
+
+    
 }
 
 $name = $_POST['name'];
