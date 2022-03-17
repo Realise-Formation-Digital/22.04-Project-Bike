@@ -5,7 +5,7 @@
     header ('location: index.php'); 
     exit();
   }
-// include ("index2.php");
+ include ("index2.php");
 //pre_r($_POST);
 ?>
 
@@ -42,12 +42,6 @@
                                         <div class="modal-body">
                                                 <table class="table">
                                                     <?php 
-                                                    // $tableau2 = [];
-                                                    // if (($handle = fopen("file.csv", "r")) !== FALSE) {
-                                                    //     while (($data = fgetcsv($handle, 1000)) !== FALSE) {
-                                                    //         $tableau2[] = $data;            
-                                                    //     }
-                                                    // }
                                                     foreach($tableau2 as $data) { ?>
                                                         <tr>
                                                             <td>
