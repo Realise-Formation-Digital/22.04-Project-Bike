@@ -64,7 +64,7 @@ pre_r($_POST, $inscriptionFullFilled);
           <!-- form -->
           <form action="index.php" method="post">
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email addressXXX</label>
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
               <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" aria-describedby="emailHelp">
              
             </div>
@@ -115,7 +115,7 @@ pre_r($_POST, $inscriptionFullFilled);
               <input type="password" class="form-control" id="Password" name="Password">
             </div>
            
-            <button type="submit" method="post" name="enregistrer" class="btn btn-primary">Enregistrer</button>
+            <button type="submit" method="post" name="enregistrer" class="btn btn-primary">Se connecter</button>
           </form>
        </div>
        <div class="modal-footer">
